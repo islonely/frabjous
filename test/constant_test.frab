@@ -1,0 +1,6 @@
+const CONST_NAME = 'a string';
+
+fn constant_test() {
+    assert CONST_NAME == 'a string';
+    assert CONST_NAME != 'a different string'
+}

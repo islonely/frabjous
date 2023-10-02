@@ -1,0 +1,15 @@
+enum Color u32 {
+    RED   = 0b16_FF000000
+    GREEN = 0b16_00FF0000
+    BLUE  = 0b16_0000FF00
+}
+
+fn default_enum_test() {
+    red := Color.RED
+    assert Color.RED == red
+    assert Color.BLUE != red
+    assert Color.RED.index == red.index
+    assert Color.BLUE.index != red.index
+    assert red.value == 0b16_FF000000
+    assert Color.BLUE.value != red.value
+}
